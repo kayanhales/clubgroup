@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+html,
+body {
+  font-size: 1em;
+  font-family: "Raleway", serif;
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  display: grid;
+  grid-template: auto;
+  text-align: center;
+  color: black;
+  padding: 2%;
+  border-bottom: 0.5em solid #000;
+}
+
+h2 {
+  font-family: "Cedarville Cursive";
+  font-size: 2rem;
+}
+
+header a,
+header a:link,
+header a:visited {
+  color: black;
+}
+
+header a:hover {
+  opacity: 0.5;
+}
+
+header nav ul li {
+  display: inline;
+  padding: 2%;
+}
+
+main {
+  display: grid;
+  margin: auto;
+}
+
+main section#banner {
+  background-image: url("https://www.greatestphysiques.com/wp-content/uploads/2017/11/Elisabeth-Akinwale.09.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+main section#banner article {
+  padding: 2%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+main section#banner article p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: #000 2px 2px 2px;
+}
+
+main section#banner article button {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  padding: 3%;
+  margin-top: 5%;
+  width: 40%;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  max-width: 40%;
+}
+
+main section#banner article button:hover {
+  opacity: 0.7;
+}
+
+main section#mission {
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  gap: 2%;
+  text-align: center;
+  align-items: center;
+  border-top: 0.5em solid #000;
+  padding: 2%;
+}
+
+main section#mission img {
+  border-radius: 10%;
+}
+
+main section#about {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  gap: 2%;
+  text-align: center;
+  align-items: center;
+  border-top: 0.5em solid #000;
+  padding: 2%;
+  color: white;
+  background: #000;
+}
+main section#about img {
+  border-radius: 10%;
+}
+
+main section#contact {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    gap: 2%;
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+    color: black;
+    width: 80%;
+    margin: auto;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 2%; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 5% 5%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    opacity: 0.5;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    padding: 2%;
+  }
+
+footer {
+  clear: both;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 500px) {
+    main section#banner article p {
+        font-size: 1rem;
+      }
+}
