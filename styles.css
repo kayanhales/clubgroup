@@ -175,7 +175,7 @@ footer {
   padding: 2%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
     main section#banner article p {
         font-size: 1rem;
       }
